@@ -1,0 +1,13 @@
+# 9月16日工作日报
+
+姓名：郑文泽
+
+## 今日进展
+
+1. 梳理 `LLM_Agentic` 任务生成、Harbor 运行、验证评分和分类链路；MCP 测试 251 个文件/4002 个用例及 CLI、MCP 类型检查通过。
+2. 核对 `overdue-action-follow-up-escalation` 的 16 次 HY4 记录，确认 14 条有效、2 条异常，已整理单并发补跑方案，尚未确认补跑结果。
+3. 完成 OpenCode 公司网关配置，验证 Kimi K3 和 MCP Host 实际握手；创建并校验 `ai-systems-code-review` Skill。
+
+## 问题与下一步
+
+1. Harbor 超时测试仍因未生成 `child.pid` 失败，部分 GPT 模型受上游通道影响；下一步执行 HY4 补跑并继续排查。
