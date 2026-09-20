@@ -4,11 +4,10 @@
 
 ## 今日进展
 
-1. 完成 `allocate-field-forum-expense` 自动修复，经 5 轮客户审核及 fresh nop=0、Oracle=1、dynamic verify 验证后标记 `VALID` 并归档。
-2. 启动 `handoffs-delegation-continuity` 中 3 个任务的 `auto-fix`；截至当前，2 个任务已通过审核并归档。
-3. 梳理自动修复、验证和归档链路，明确同模型多轮复审不等于独立多模型审核。
+1. 排查自动修复反复重试，确认 Harbor Oracle 缺少环境变量、OpenCode 无法发现项目 Skill 两处原因；补齐环境后 Oracle 获得 1.0，`long-task-agent-repair` 加载成功。
+2. 5 个 RL 任务已通过自动修复流水线并进入 `auto-fix-success`；客户视角复审仍发现问题，形成逐项核实和精修建议。
+3. 对 `deadline-aware-handover-inventory` 做只读复核，确认过程证据、时间精度和证书范围三项待修问题，并隔离框架层面的 C-META-003。
 
 ## 问题与下一步
 
-1. 剩余交接任务曾因 Docker 运行时健康检查 exit 137 阻塞，当前仍在修复验证，不计为完成。
-2. 下一步完成剩余任务验证，并按新要求补充独立多模型审核及 HY4 评测。
+1. 5 个任务的客户问题仍需逐项关闭，并对最终交付版本重新审核与验证；独立动态验收和 HY4 试跑尚无完成证据。
