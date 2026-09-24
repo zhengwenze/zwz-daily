@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "zwz-daily": {
+      "type": "local",
+      "command": [
+        "/Users/zhengwenze/Desktop/codex/zwz-daily/.venv/bin/python",
+        "/Users/zhengwenze/Desktop/codex/zwz-daily/daily_mcp.py"
+      ],
+      "enabled": true
+    }
+  }
+}
